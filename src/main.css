@@ -23,6 +23,10 @@ body {
     background: #ffffff;
 }
 
+.container__flex {
+    display: flex;
+}
+
 .container,
 .form__input,
 .form__button {
@@ -131,6 +135,33 @@ body {
     border: 2px solid green;
     background: #ffe;
     border-radius: 5px;
+}
+
+#button__wide {
+    width: 12em;
+    border: 2px solid green;
+    background: #ffe;
+    border-radius: 5px;
+}
+
+#button__small {
+    width: 4em;
+    border: 2px solid green;
+    background: #ffe;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+#approved {
+    color: green;
+}
+
+/* #r_cname, #r_etype, #r_from, #r_to, #r_guests, #r_budget {
+
+} */
+
+.padding {
+    padding: 1em;
 }
 
 a {

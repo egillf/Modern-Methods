@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="./src/main.css">
+<div class="container">
+    <form>
+    <h1 class="form__title">Request for Event Planning</h1>
+
+      <label for="cname">Client name</label>
+      <input onchange="saveValue('cname',value)" id="cname" type="text">
+
+      <label for="etype">Event type</label>
+      <input onchange="saveValue('etype',value)" id="etype" type="text">
+
+      <div>
+          <label for="from">From</label>
+          <input onchange="saveValue('from',value)" id="from" type="date">
+    
+          <label for="to">To</label>
+          <input onchange="saveValue('to',value)" id="to" type="date">
+      </div>
+      <div class="padding"></div>
+      <label for="guests">Expected no. of guests</label>
+      <input onchange="saveValue('guests',value)" id="guests" type="number">
+      <div class="padding"></div>
+
+      <label for="budget">Expected Budget</label>
+      <input onchange="saveValue('budget',value)" id="budget" type="number">
+      <label>SEK</label>
+      <div class="padding"></div>
+      <!-- <input onclick="submitRequest()" type="submit" value="Submit"> -->
+      <div onclick="sendToManager()" id="button__wide"><a>Send to manager</a></div>
+      <div class="padding"></div>
+      <div class="container__flex">
+        <div onclick="goTo('main')" id="button__wide"><a>Go to main page</a></div>
+      </div>
+    </form>
+    <script src="./src/main.js"></script>
+  </div>

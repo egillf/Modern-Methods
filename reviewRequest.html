@@ -2,8 +2,8 @@
 <body onload="fetchData()">
   <div class="container">
       <form>
-        <h1 class="form__title">Client Request Details</h1>
-
+      <h1 class="form__title">Review request</h1>
+  
         <label for="r_cname">Client name</label>
         <input id="r_cname" type="text" readonly>
   
@@ -25,32 +25,16 @@
         <label for="r_budget">Expected Budget</label>
         <input id="r_budget" type="number" readonly>
         <label>SEK</label>
-  
-        <label for="desc">Description</label>
-        <input id="desc" type="text">
-  
-        <label for="decorations">Decorations</label>
-        <textarea id="decorations"  ></textarea>
-  
-        <label for="food">Food/Drinks</label>
-        <textarea id="food"  ></textarea>
-  
-        <label for="photos">Filming/Photos</label>
-        <textarea id="photos"  ></textarea>
-  
-        <label for="music">Music</label>
-        <textarea id="music"  ></textarea>
-  
-        <label for="art">Art</label>
-        <textarea id="art"  ></textarea>
-  
-        <label for="it">IT</label>
-        <textarea id="it"  ></textarea>
-  
-        <label for="other">Other needs</label>
-        <textarea id="other"  ></textarea>
-  
-        <div onclick="goTo('sub6')" id="button"><a>Submit</a></div>
+        <div class="padding"></div>
+        <div class="container__flex">
+          <div onclick="approveRequest()" id="button__wide"><a>Approve request</a></div> 
+          <div onclick="declineRequest()" id="button__wide"><a>Decline request</a></div>
+          <div onclick="createDetailedRequest()" id="button__wide"><a>Create detailed form</a></div>
+        </div>
+        <div class="padding"></div>
+        <div class="container__flex">
+          <div onclick="goTo('main')" id="button__wide"><a>Go to main page</a></div>
+        </div>
       </form>
       <script src="./src/main.js"></script>
     </div>

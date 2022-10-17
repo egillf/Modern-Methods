@@ -1,1 +1,20 @@
-<h1>MAIN PAGE</h1>
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Main page </title>
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="./src/main.css">
+</head>
+<body>
+    <div class="container">
+            <h1 class="form__title">Welcome to the main page</h1>
+            <h2 class="form__title">Please select a role</h1>
+            <div class="container__flex">
+                <div onclick="selectRole('role1')" id="button__wide"><a>Customer service</a></div>
+                <div onclick="selectRole('role2')" id="button__wide"><a>Senior C.S. Mgr</a></div>
+                <div onclick="selectRole('role3')" id="button__wide"><a>Financial Manager</a></div>
+            </div>
+    </div>
+    <script src="./src/main.js"></script>
+</body>
